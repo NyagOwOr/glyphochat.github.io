@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PictoChat Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PictoChat Online</h1>
+    <div id="chat-container">
+        <canvas id="drawing-canvas" width="600" height="400"></canvas>
+        <textarea id="chat-box" readonly></textarea>
+        <input id="chat-input" type="text" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

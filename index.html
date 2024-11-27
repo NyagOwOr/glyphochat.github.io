@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PictoChat Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div id="intro">
+            <img src="public/images/intro_bg.png" id="intro_bg" />
+            <img src="public/images/logo_dc.png" id="logo" />
+            <div class="intro-text">Username:</div>
+            <input type="text" id="username" maxlength="10" placeholder="Enter username">
+            <div class="intro-text">Color:</div>
+            <input type="color" id="color-picker" value="#61829a">
+            <button id="start-chat">Start Chat</button>
+        </div>
+        <div id="chat-room" style="display:none;">
+            <canvas id="chat-canvas"></canvas>
+            <input type="text" id="message-box" placeholder="Type a message..." maxlength="100">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+</body>
+</html>
